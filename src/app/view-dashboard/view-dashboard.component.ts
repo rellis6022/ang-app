@@ -8,12 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ViewDashboardComponent implements OnInit {
 
   constructor() { 
-
-    throw new Error("new test error");
-    
   }
 
   ngOnInit(): void {
   }
-
 }

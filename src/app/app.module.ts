@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { GlobalErrorHandler } from './global-error-handler';
 
@@ -44,7 +45,8 @@ import { ViewAuthorPublicationReviewComponent } from './view-author-publication-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     {
