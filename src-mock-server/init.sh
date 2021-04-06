@@ -1,0 +1,1 @@
+./node_modules/.bin/json-server --watch ./src-mock-server/mock.db.json --port 3004

@@ -1,0 +1,6 @@
+{
+    "error": [
+      { "id": 1, "description": "desc", "error": "error" }
+    ],
+    "profile": { "name": "typicode" }
+  }
