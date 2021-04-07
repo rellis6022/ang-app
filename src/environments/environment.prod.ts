@@ -5,7 +5,8 @@
 export const environment = {
   production: true,
   api: 'http://localhost:8081/api',
-  signalR: 'http://localhost:80/signalr'
+  signalR: 'http://localhost:80/signalr',
+  error: 'http://localhost:3004/error'
 };
 
 /*

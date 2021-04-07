@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-view-publications-index',
   templateUrl: './view-publications-index.component.html',
-  styleUrls: ['./view-publications-index.component.css']
+  styleUrls: ['./view-publications-index.component.scss']
 })
 export class ViewPublicationsIndexComponent implements OnInit {
 

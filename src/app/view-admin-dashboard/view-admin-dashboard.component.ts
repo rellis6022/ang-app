@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-view-admin-dashboard',
   templateUrl: './view-admin-dashboard.component.html',
-  styleUrls: ['./view-admin-dashboard.component.css']
+  styleUrls: ['./view-admin-dashboard.component.scss']
 })
 export class ViewAdminDashboardComponent implements OnInit {
 
