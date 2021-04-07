@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from './../environments/environment'
 
 @Injectable()
 export class GlobalErrorHandler implements ErrorHandler {
@@ -10,7 +11,7 @@ export class GlobalErrorHandler implements ErrorHandler {
 
     handleError(error: Error | HttpErrorResponse) {
         
-    this.http.post<any>('http://localhost:3004/error', 
+    this.http.post<any>(environment.error, 
     { errorInstance: error.toString() }).subscribe({
         next: data => {
             console.log("sent the error ")
