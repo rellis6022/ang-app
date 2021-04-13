@@ -1,0 +1,6 @@
+{
+    "/candids": {
+        "target": "http://localhost:3004/",
+        "secure": false
+    }
+}
