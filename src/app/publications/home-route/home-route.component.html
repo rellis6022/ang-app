@@ -1,0 +1,16 @@
+<div class="container">
+    <div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-item nav-link" routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{exact:true}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link" routerLinkActive="active" routerLink="./resources" [routerLinkActiveOptions]="{exact:true}">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item nav-link" routerLinkActive="active" routerLink="./article" [routerLinkActiveOptions]="{exact:true}">Article</a>
+            </li>
+        </ul>
+    </div>
+    <router-outlet></router-outlet>
+</div>
