@@ -1,2 +1,27 @@
-<h1>Hello App</h1>
-<router-outlet></router-outlet>
+<style>
+    .nav-wrap {
+        padding: 40px;
+        background: #eee;
+    }
+    
+    .page-wrap {
+        padding: 20px;
+    }
+</style>
+<div class="nav-wrap">
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item">
+            <a class="nav-item nav-link" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]="{exact:true}">home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link" routerLinkActive="active" routerLink="/publications" [routerLinkActiveOptions]="{exact:true}">Publications</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link" routerLinkActive="active" routerLink="/author" [routerLinkActiveOptions]="{exact:true}">Author</a>
+        </li>
+    </ul>
+</div>
+
+<div class="page-wrap">
+    <router-outlet></router-outlet>
+</div>
