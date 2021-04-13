@@ -12,6 +12,11 @@ import { RevisionsComponent } from './revisions/revisions.component';
   imports: [
     CommonModule,
     AuthorRoutingModule
+  ],
+  exports: [
+    DashboardComponent,
+    AuthoringComponent,
+    RevisionsComponent
   ]
 })
 export class AuthorModule { }
