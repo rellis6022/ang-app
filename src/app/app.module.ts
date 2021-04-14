@@ -6,9 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PublicationsModule } from "./publications/publications.module";
 import { AuthorModule } from "./author/author.module";
+import { UiLibModule } from "./ui-lib/ui-lib.module";
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { Sandbox } from './sandbox/sandbox';
+import { BootstrapRefComponent } from './bootstrap-ref/bootstrap-ref.component';
 
 
 @NgModule({
@@ -17,10 +19,12 @@ import { Sandbox } from './sandbox/sandbox';
     HomepageComponent,
     NotFoundComponent,
     Sandbox,
+    BootstrapRefComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    UiLibModule,
     PublicationsModule,
     AuthorModule,
     AppRoutingModule, //Routing must be listed last!

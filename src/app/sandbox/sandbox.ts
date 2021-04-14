@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {avatars, places, abstract } from "../data/images"
 
+
 @Component({
   selector: 'sandbox',
   templateUrl: './sandbox.html',

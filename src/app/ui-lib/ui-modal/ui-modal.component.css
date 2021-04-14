@@ -1,0 +1,13 @@
+.modal {
+    display: none
+}
+
+.modal.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.fade {
+    background: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,19 @@
+<div class="btn btn-outline-secondary" (click)="toggleModal()">
+    Show Modal
+</div>
+
+<div class="modal fade" [ngClass]="{'show': visible }" tabindex="-1" role="dialog" (click)="modalClickOff($event)">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" *ngIf="title">
+                <h5 class="modal-title">{{title}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="toggleModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+                <ng-content></ng-content>
+            </div>
+        </div>
+    </div>
+</div>
