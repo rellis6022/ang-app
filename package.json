@@ -7,9 +7,7 @@
         "build": "ng build",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e",
-        "start:proxy": "ng serve -—proxy-config ./src/proxy.conf.json",
-        "mock:db": "./node_modules/.bin/json-server --watch ./src-mock-server/mock.db.json --port 3004"
+        "e2e": "ng e2e"
     },
     "private": true,
     "dependencies": {

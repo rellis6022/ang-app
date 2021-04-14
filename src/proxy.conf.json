@@ -1,6 +1,6 @@
 {
-    "/candids": {
-        "target": "http://localhost:3004/",
+    "/": {
+        "target": "http://localhost:3004/api/data",
         "secure": false
     }
 }

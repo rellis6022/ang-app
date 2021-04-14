@@ -8,6 +8,7 @@ import { PublicationsModule } from "./publications/publications.module";
 import { AuthorModule } from "./author/author.module";
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MockDataSandboxComponent } from './mock-data-sandbox/mock-data-sandbox.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     HomepageComponent,
     NotFoundComponent,
+    MockDataSandboxComponent,
   ],
   imports: [
     BrowserModule,
