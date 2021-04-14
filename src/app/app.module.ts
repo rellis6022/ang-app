@@ -1,6 +1,6 @@
 import { NgModule, ErrorHandler} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, } from '@angular/common/http';
 import { GlobalErrorHandler } from './global-error-handler';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +8,7 @@ import { PublicationsModule } from "./publications/publications.module";
 import { AuthorModule } from "./author/author.module";
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { Sandbox } from './sandbox/sandbox';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     HomepageComponent,
     NotFoundComponent,
+    Sandbox,
   ],
   imports: [
     BrowserModule,
