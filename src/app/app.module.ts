@@ -11,6 +11,9 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { Sandbox } from './sandbox/sandbox';
 import { BootstrapRefComponent } from './bootstrap-ref/bootstrap-ref.component';
+import { SplashImageComponent } from './splash-image/splash-image.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
 
 
 @NgModule({
@@ -20,6 +23,9 @@ import { BootstrapRefComponent } from './bootstrap-ref/bootstrap-ref.component';
     NotFoundComponent,
     Sandbox,
     BootstrapRefComponent,
+    SplashImageComponent,
+    LoginFormComponent,
+    PageHeaderComponent,
   ],
   imports: [
     BrowserModule,

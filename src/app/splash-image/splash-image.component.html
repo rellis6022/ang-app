@@ -1,0 +1,15 @@
+<style class="bg-light">
+    div {
+        height: 400px;
+        cursor: pointer;
+    }
+    
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%
+    }
+</style>
+<div (click)="getPhoto()">
+    <img *ngIf="url" [src]="url" alt="Unsplash Image!">
+</div>

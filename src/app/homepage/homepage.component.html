@@ -59,38 +59,12 @@
     p.semi-bold {
         font-weight: 600;
     }
-    
-    .page-header h4 {
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 32px;
-        line-height: 1em;
-        letter-spacing: 0em;
-        text-align: left;
-        margin-bottom: 0;
-        color: #004AA7;
-    }
-    
-    .page-header p {
-        margin: 0;
-        color: #555;
-        font-size: 16px;
-    }
-    
-    .page-header hr {
-        margin-top: .5em;
-        margin-bottom: 2em;
-    }
 </style>
 <div class="container">
 
-    <div class="page-header mb-4 mt-5">
-        <h4>Typographic Elements</h4>
-        <p>Preliminary design styling for component development with Bootstrap.</p>
-        <hr>
-    </div>
+
+    <app-page-header title="Typographic Elements" subtitle="Preliminary design styling for component development"></app-page-header>
+
 
 
 
@@ -133,29 +107,27 @@
         </div>
     </div>
 
-    <div class="page-header mb-4 mt-5">
-        <h4>Table Data</h4>
-        <p>Preliminary design pass for table data display.</p>
-        <hr>
-    </div>
+    <app-page-header title="Forms" subtitle="Preliminary setup for forms and inputs."></app-page-header>
+    <app-login-form></app-login-form>
+
+    <app-page-header title="Table Data" subtitle="Preliminary design pass for table data display.">
+    </app-page-header>
+
 
     <app-bootstrap-ref></app-bootstrap-ref>
 
-    <div class="page-header mb-4 mt-5">
-        <h4>Modal Dialog</h4>
-        <p>Initial implementation in prep for various modal requirements.</p>
-        <hr>
-    </div>
+
+
+    <app-page-header title="Modal Dialog" subtitle="Initial implementation in prep for various modal requirements">
+    </app-page-header>
 
     <app-ui-modal title="The Modal Title">
         <h1>Hello Modal</h1>
         <p>This is the message inside the modal component</p>
     </app-ui-modal>
 
-    <div class="page-header mb-4 mt-5">
-        <h4>Development utilities, mock data and FPO visuals</h4>
-        <p>In development, placehoder images, utility classes, etc.</p>
-        <hr>
-    </div>
+
+    <app-page-header title="Development utilities, mock data and FPO visuals" subtitle="In development, placehoder images, utility classes, etc.">
+    </app-page-header>
     <sandbox></sandbox>
 </div>
