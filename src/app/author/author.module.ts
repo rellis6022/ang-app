@@ -6,11 +6,13 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthoringComponent } from './authoring/authoring.component';
 import { RevisionsComponent } from './revisions/revisions.component';
 import { HomeRouteComponent } from './home-route/home-route.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 
 @NgModule({
   declarations: [DashboardComponent, AuthoringComponent, RevisionsComponent, HomeRouteComponent],
   imports: [
+    CKEditorModule,
     CommonModule,
     AuthorRoutingModule
   ],
