@@ -6,15 +6,156 @@
     .container.bg-light.shadow-sm.mt-4 {
         border: 1px solid #ddd;
     }
+    
+    h1 {
+        font-family: Inter;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 42px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    h2.report {
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #004AA7;
+    }
+    
+    h4 {
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    p.body {
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    
+    p {
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        color: #252525;
+    }
+    
+    p.semi-bold {
+        font-weight: 600;
+    }
+    
+    .page-header h4 {
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        line-height: 1em;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 0;
+        color: #004AA7;
+    }
+    
+    .page-header p {
+        margin: 0;
+        color: #555;
+        font-size: 16px;
+    }
+    
+    .page-header hr {
+        margin-top: .5em;
+        margin-bottom: 2em;
+    }
 </style>
 <div class="container">
-    <h4>Modal Component</h4>
-    <p>Initial component for modals using bootstrap. In progress.</p>
+
+    <div class="page-header mb-4 mt-5">
+        <h4>Typographic Elements</h4>
+        <p>Component for visualizing financial data.</p>
+        <hr>
+    </div>
+
+
+
+    <h1>Forcasting Financial Markets</h1>
+    <p class="semi-bold">
+        The rapid decline in Covid-19 cases has taken the number of active cases from more than 5 million at the end of 2020 to 2 million in the middle of February. After a comparable decline in the number of hospitalizations, the next macro question in the US
+        is where the caseload bottoms out. FHN Financial’s informal goal 500,000.
+    </p>
+    <p>
+        As the infection rate falls, the rate of transmission is lower as well. It may not be low enough. The chart tracks the national average rate of transmission where below 1.0 indicates a slowing spread – with each state weighted by the number of infections
+        each day.
+    </p>
+
+    <div class="mt-4 mb-4">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1610971441312-6578dc23f34f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="report">The Weekly Report</h2>
+                        <h4>Our commitment to low cost technological advancement</h4>
+                        <p class="body">
+                            As the infection rate falls, the rate of transmission is lower as well. It may not be low enough.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1504298032419-2e78164cf76e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fG1vZGVybiUyMG1ldGFsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="report">The Weekly Report</h2>
+                        <h4>What’s ahead for the future of business and technology</h4>
+                        <p class="body">
+                            As the infection rate falls, the rate of transmission is lower as well. It may not be low enough.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-header mb-4 mt-5">
+        <h4>Table Data</h4>
+        <p>Component for visualizing financial data.</p>
+        <hr>
+    </div>
+
+    <app-bootstrap-ref></app-bootstrap-ref>
+
+    <div class="page-header mb-4 mt-5">
+        <h4>Modal Dialog</h4>
+        <p>In development, placehoder images, utility classes, etc.</p>
+        <hr>
+    </div>
+
     <app-ui-modal title="The Modal Title">
         <h1>Hello Modal</h1>
         <p>This is the message inside the modal component</p>
     </app-ui-modal>
-    <!--  -->
+
+    <div class="page-header mb-4 mt-5">
+        <h4>Development Utities</h4>
+        <p>In development, placehoder images, utility classes, etc.</p>
+        <hr>
+    </div>
     <sandbox></sandbox>
-    <app-bootstrap-ref></app-bootstrap-ref>
 </div>
