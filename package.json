@@ -20,6 +20,8 @@
         "@angular/platform-browser-dynamic": "~11.2.7",
         "@angular/router": "~11.2.7",
         "@aspnet/signalr": "^1.0.26",
+        "@ckeditor/ckeditor5-angular": "^2.0.1",
+        "@ckeditor/ckeditor5-build-classic": "^27.0.0",
         "angular-in-memory-web-api": "^0.11.0",
         "bootstrap": "^4.6.0",
         "font-awesome": "^4.7.0",
