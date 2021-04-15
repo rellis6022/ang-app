@@ -1,8 +1,4 @@
-<h4 class="mt-4">Sandbox</h4>
-<p>In development, placehoder images, utility classes, etc.</p>
-<hr>
-
-<div class="grid-wrap">
+<div class="container bg-light shadow-sm mt-4 p-4">
     <h2>places</h2>
     <div class="grid">
         <div class="grid-item" *ngFor=" let item of places">
@@ -10,16 +6,9 @@
         </div>
     </div>
 </div>
-<div class="grid-wrap">
-    <h2>faces</h2>
-    <div class="grid">
-        <div class="grid-item" *ngFor=" let item of avatars">
-            <img alt="" [src]="item.url">
-        </div>
-    </div>
-</div>
 
-<div class="grid-wrap">
+
+<div class="container bg-light shadow-sm mt-4 p-4">
     <h2>items</h2>
     <div class="grid">
         <div class="grid-item" *ngFor=" let item of abstract">
@@ -27,3 +16,12 @@
         </div>
     </div>
 </div>
+
+<!-- <div class="container bg-light shadow-sm mt-4 p-4">
+    <h2>faces</h2>
+    <div class="grid">
+        <div class="grid-item" *ngFor=" let item of avatars">
+            <img alt="" [src]="item.url">
+        </div>
+    </div>
+</div> -->
