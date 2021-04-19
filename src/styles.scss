@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+$body-bg: #000;
+$body-color: #111;
+$brand-primary: #1a3968;
+$button-primary: #00499e;
+$link-primary: #00499e;
+//$nav-tabs-link-active-border-color:'inherit';
+a:link,
+a:visited,
+a:hover {
+    color: $link-primary;
+}
+
+.btn {
+    &.btn-primary {
+        background-color: $button-primary;
+    }
+}
