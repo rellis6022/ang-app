@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import * as ContentEditor from '@uxui-guy/ckeditor5-custom-inline';
 
 
 @Component({
@@ -9,7 +9,7 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 })
 export class DashboardComponent implements OnInit {
 
-  public Editor = ClassicEditor;
+  public Editor = ContentEditor;
 
   constructor() { }
 
