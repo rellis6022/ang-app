@@ -1,0 +1,16 @@
+<ng-container *ngIf="!data">
+    <ul [class]="_className">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+    </ul>
+</ng-container>
+<ng-container *ngIf="data">
+    <ul [class]="_className">
+        <ng-container *ngFor="let item of data">
+            <li [class]="getChildClass()">{{item.name}}</li>
+        </ng-container>
+    </ul>
+</ng-container>

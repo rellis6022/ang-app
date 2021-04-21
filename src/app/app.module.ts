@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule, } from '@angular/common/http';
 import { GlobalErrorHandler } from './global-error-handler';
 import { AppRoutingModule } from './app-routing.module';
@@ -29,6 +30,7 @@ import { PageHeaderComponent } from './page-header/page-header.component';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     HttpClientModule,
     UiLibModule,
     PublicationsModule,

@@ -9,6 +9,7 @@ $color-white: #fcfcfc;
 $color-dark-blue: #002357;
 $color-soft-blue: #e7eef6;
 $color-off-white: #f7f7f7;
+$color-gray: #666;
 $color-header-primary: #002357;
 //$nav-tabs-link-active-border-color:'inherit';
 body {
@@ -28,6 +29,14 @@ a:hover {
     &.btn-light {
         color: $button-primary;
         background-color: $color-soft-blue;
+    }
+    &.btn-outline-light {
+        color: $color-gray;
+        border-color: $color-gray;
+    }
+    &.btn-outline-primary {
+        color: $button-primary;
+        border-color: $button-primary;
     }
 }
 
@@ -54,4 +63,10 @@ a:hover {
     padding: 40px;
     background: $color-off-white;
     margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 }
