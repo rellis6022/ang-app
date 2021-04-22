@@ -17,6 +17,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
 import { AddClassDirective } from './directives/add-class.directive';
 import { TruncatePipe } from './pipes/truncate.pipe';
+import { TitlecasePipe } from './pipes/titlecase.pipe';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
     PageHeaderComponent,
     AddClassDirective,
     TruncatePipe,
+    TitlecasePipe,
   ],
   imports: [
     BrowserModule,
