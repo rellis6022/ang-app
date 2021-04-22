@@ -1,4 +1,20 @@
-<div class="grid">
+<div class="input-group button" [ngClass]="getClasses()">
+    <div class="input-group-prepend">
+        <span class="input-group-text">
+            <i class="fa" [ngClass]="icon"></i>
+        </span>
+    </div>
+    <input type="button" [value]="text" class="form-control split">
+    <div class="input-group-append" style="min-width:30px;">
+        <span class="input-group-text">
+            <i class="fa" [ngClass]="icon_right"></i>
+        </span>
+    </div>
+</div>
+
+
+
+<!-- <div class="grid">
     <button class="btn btn-primary">Button Primary</button>
     <button class="btn btn-light">Button Light</button>
     <button class="btn btn-outline-primary">Outline Primary</button>
@@ -18,4 +34,4 @@
         <span class="fa fa-calendar"></span>
         Calendar
     </button>
-</div>
+</div> -->

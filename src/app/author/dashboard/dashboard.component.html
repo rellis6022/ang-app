@@ -1,4 +1,18 @@
-<app-ui-block>
+<app-ui-block title="Dropdown & Input">
+    <app-ui-input></app-ui-input>
+    <div class="w-50">
+        <app-ui-dropdown>
+            <app-ui-list [data]="[
+            { id: 0, name:'Select One'},
+            { id: 1, name:'Select Two'},
+            { id: 2, name:'Select Three'},
+            { id: 3, name:'Select Four'}
+            ]"></app-ui-list>
+        </app-ui-dropdown>
+    </div>
+</app-ui-block>
+
+<app-ui-block title="List & Buttons">
     <app-ui-card>
         <app-ui-button></app-ui-button>
     </app-ui-card>
@@ -10,6 +24,8 @@
         <app-ui-list></app-ui-list>
     </app-ui-card>
 </app-ui-block>
+
+
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col">

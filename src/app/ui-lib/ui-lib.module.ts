@@ -9,11 +9,12 @@ import { UiListComponent } from './ui-list/ui-list.component';
 import { UiButtonComponent } from './ui-button/ui-button.component';
 import { UiHeadingComponent } from './ui-heading/ui-heading.component';
 import { UiCardComponent } from './ui-card/ui-card.component';
+import { UiDropdownComponent } from './ui-dropdown/ui-dropdown.component';
 
 
 
 @NgModule({
-  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent],
+  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent],
   imports: [
     CommonModule,
     FormsModule
@@ -27,6 +28,7 @@ import { UiCardComponent } from './ui-card/ui-card.component';
     UiButtonComponent,
     UiHeadingComponent,
     UiCardComponent,
+    UiDropdownComponent
   ]
 })
 export class UiLibModule { }
