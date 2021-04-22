@@ -70,3 +70,9 @@ a:hover {
     grid-template-columns: repeat(4, 1fr);
     gap: 0.5rem;
 }
+
+.split {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}

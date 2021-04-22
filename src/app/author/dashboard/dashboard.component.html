@@ -2,10 +2,33 @@
     <app-ui-card>
         <app-ui-button></app-ui-button>
     </app-ui-card>
-    <app-ui-card>
+    <app-ui-card cols="6">
         <app-ui-list [data]="users" icon="angle-right"></app-ui-list>
     </app-ui-card>
+    <app-ui-card>
+        <h1>Normal list</h1>
+        <app-ui-list></app-ui-list>
+    </app-ui-card>
 </app-ui-block>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+        <app-ui-card>
+            <app-ui-list [data]="[
+                {id:0, name:'Excercise'},
+                {id:1, name:'Meditate'},
+                {id:2, name:'Read'},
+                {id:3, name:'Drink Water'},
+                {id:4, name:'Rest'}
+            ]" icon="cog"></app-ui-list>
+        </app-ui-card>
+    </div>
+    <div class="col">
+        <app-ui-card>
+            <app-ui-list [data]="users" icon="cog"></app-ui-list>
+        </app-ui-card>
+    </div>
+</div>
 
 <app-ui-block title="Form Component">
     <app-ui-form></app-ui-form>

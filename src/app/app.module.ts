@@ -15,6 +15,8 @@ import { BootstrapRefComponent } from './bootstrap-ref/bootstrap-ref.component';
 import { SplashImageComponent } from './splash-image/splash-image.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { AddClassDirective } from './directives/add-class.directive';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { PageHeaderComponent } from './page-header/page-header.component';
     SplashImageComponent,
     LoginFormComponent,
     PageHeaderComponent,
+    AddClassDirective,
+    TruncatePipe,
   ],
   imports: [
     BrowserModule,

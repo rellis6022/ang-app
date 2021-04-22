@@ -6,9 +6,13 @@ import { Component, Input, OnInit, Renderer2, ElementRef } from '@angular/core';
   styleUrls: ['./ui-list.component.css']
 })
 export class UiListComponent implements OnInit {
-  _className= 'list-group';
+  _listClass= 'list-group';
+  _itemClass = 'list-group-item'
   _iconName = 'fa fa-'
   _hasIcon = false;
+
+  @Input() listClass = this._listClass;
+  @Input() itemClass = this._itemClass;
   
   @Input() 
   data:{ 
@@ -24,13 +28,13 @@ export class UiListComponent implements OnInit {
 
   @Input()
     set className(val:string) {
-        this._className = val; 
+        this._listClass = val; 
     }
 
   getChildClass(){
-    if(this._className === 'list-group'){
+    if(this._listClass === 'list-group'){
       const base = 'list-group-item';
-      const withIcon = " d-flex justify-content-between align-items-center"
+      const withIcon = " split"
       return this._hasIcon ? base + withIcon : base;
     }
     return ''

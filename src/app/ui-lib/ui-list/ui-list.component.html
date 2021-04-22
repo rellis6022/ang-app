@@ -1,18 +1,18 @@
-<ng-container *ngIf="!data">
-    <ul [class]="_className">
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-        <li>Item Four</li>
-        <li>Item Five</li>
+<ng-container *ngIf="!data; else render">
+    <ul [ngClass]="_listClass">
+        <li [ngClass]="_itemClass">Item One</li>
+        <li [ngClass]="_itemClass">Item Two</li>
+        <li [ngClass]="_itemClass">Item Three</li>
+        <li [ngClass]="_itemClass">Item Four</li>
+        <li [ngClass]="_itemClass">Item Five</li>
     </ul>
 </ng-container>
-<ng-container *ngIf="data">
-    <ul [class]="_className">
+<ng-template #render>
+    <ul [ngClass]="_listClass">
         <ng-container *ngFor="let item of data">
-            <li [class]="getChildClass()">{{item.name}}
+            <li [ngClass]="getChildClass()">{{item.name}}
                 <span *ngIf="_hasIcon" [class]="getIcon()"></span>
             </li>
         </ng-container>
     </ul>
-</ng-container>
+</ng-template>
