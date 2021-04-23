@@ -1,0 +1,29 @@
+<style>
+    .input-group,
+    input {
+        background-color: transparent;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        outline: none;
+    }
+    
+    .form-control {
+        border-left: none;
+    }
+    
+    .input-group-prepend .input-group-text {
+        border-top-left-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-right: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+</style>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+        <span class="input-group-text">
+            <i class="fa fa-search"></i>
+        </span>
+    </div>
+    <input type="text" class="form-control">
+</div>

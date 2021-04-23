@@ -63,19 +63,19 @@
 <div class="container">
 
 
-    <app-page-header title="Typographic Elements" subtitle="Preliminary design styling for component development"></app-page-header>
+    <app-page-header title="Typographic Elements" subtitle="Preliminary design styling for component development" appAddClass="Jello Bello"></app-page-header>
+
+    <div [ngClass]=" 0 > 1 ? 'blah brah' : 'nah zah' ">
+        <h1>Directive</h1>
+    </div>
 
 
-
-
-    <h1>Forcasting Financial Markets</h1>
+    <h1>{{title | titlecase }}</h1>
     <p class="semi-bold">
-        The rapid decline in Covid-19 cases has taken the number of active cases from more than 5 million at the end of 2020 to 2 million in the middle of February. After a comparable decline in the number of hospitalizations, the next macro question in the US
-        is where the caseload bottoms out. FHN Financial’s informal goal 500,000.
+        {{blurb}}
     </p>
     <p>
-        As the infection rate falls, the rate of transmission is lower as well. It may not be low enough. The chart tracks the national average rate of transmission where below 1.0 indicates a slowing spread – with each state weighted by the number of infections
-        each day.
+        {{blurb2}}
     </p>
 
     <div class="mt-4 mb-4">

@@ -1,0 +1,18 @@
+<div class="dropdown">
+    <app-ui-button [text]="text" (click)="toggleShow()" [icon]="icon" [icon_right]="getIcon()"></app-ui-button>
+    <ul class="dropdown-menu w-100 p-2" [ngClass]="getShow()">
+        <ng-content></ng-content>
+    </ul>
+</div>
+
+
+
+<!-- 
+   
+  OG btn from Bootstrap docs:
+   
+  <button class="btn btn-outline-secondary split dropdown-toggle w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button> 
+
+-->

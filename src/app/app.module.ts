@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule, } from '@angular/common/http';
 import { GlobalErrorHandler } from './global-error-handler';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,9 @@ import { BootstrapRefComponent } from './bootstrap-ref/bootstrap-ref.component';
 import { SplashImageComponent } from './splash-image/splash-image.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { AddClassDirective } from './directives/add-class.directive';
+import { TruncatePipe } from './pipes/truncate.pipe';
+import { TitlecasePipe } from './pipes/titlecase.pipe';
 
 
 @NgModule({
@@ -26,9 +30,13 @@ import { PageHeaderComponent } from './page-header/page-header.component';
     SplashImageComponent,
     LoginFormComponent,
     PageHeaderComponent,
+    AddClassDirective,
+    TruncatePipe,
+    TitlecasePipe,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     HttpClientModule,
     UiLibModule,
     PublicationsModule,

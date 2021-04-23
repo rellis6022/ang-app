@@ -1,0 +1,18 @@
+<ng-container *ngIf="!data; else render">
+    <ul [ngClass]="_listClass">
+        <li [ngClass]="_itemClass">Item One</li>
+        <li [ngClass]="_itemClass">Item Two</li>
+        <li [ngClass]="_itemClass">Item Three</li>
+        <li [ngClass]="_itemClass">Item Four</li>
+        <li [ngClass]="_itemClass">Item Five</li>
+    </ul>
+</ng-container>
+<ng-template #render>
+    <ul [ngClass]="_listClass">
+        <ng-container *ngFor="let item of data">
+            <li [ngClass]="getChildClass()">{{item.name}}
+                <span *ngIf="_hasIcon" [class]="getIcon()"></span>
+            </li>
+        </ng-container>
+    </ul>
+</ng-template>
