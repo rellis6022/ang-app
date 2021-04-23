@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-ui-dropdown',
@@ -7,9 +7,22 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UiDropdownComponent implements OnInit {
   
-  show = false;
+  private show = false;
+
+  @Output() onActive = new EventEmitter<boolean>();
+  
   @Input() text = "Select Item"
+  
   @Input() icon = ''
+
+  @Input()
+  get expanded(){
+    return this.show;
+  }
+  set expanded(bool:boolean){
+    this.show = bool;
+    this.onActive.emit(this.show);
+  }
    
   constructor() { }
 

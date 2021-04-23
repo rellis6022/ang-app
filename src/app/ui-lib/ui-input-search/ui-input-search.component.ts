@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ui-input-search',
@@ -6,6 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ui-input-search.component.css']
 })
 export class UiInputSearchComponent implements OnInit {
+
+  @Input()
+  public label:string = '';
+ 
+  @Input()
+  public placeholder: string = 'Search';
+ 
+
 
   constructor() { }
 
