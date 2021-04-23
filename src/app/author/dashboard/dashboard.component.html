@@ -1,57 +1,5 @@
-<app-ui-block title="Dropdown & Input">
-    <app-ui-input></app-ui-input>
-    <div class="w-50">
-        <app-ui-dropdown>
-            <app-ui-list [data]="[
-            { id: 0, name:'Select One'},
-            { id: 1, name:'Select Two'},
-            { id: 2, name:'Select Three'},
-            { id: 3, name:'Select Four'}
-            ]"></app-ui-list>
-        </app-ui-dropdown>
-    </div>
-</app-ui-block>
-
-<app-ui-block title="List & Buttons">
-    <app-ui-card>
-        <app-ui-button></app-ui-button>
-    </app-ui-card>
-    <app-ui-card cols="6">
-        <app-ui-list [data]="users" icon="angle-right"></app-ui-list>
-    </app-ui-card>
-    <app-ui-card>
-        <h1>Normal list</h1>
-        <app-ui-list></app-ui-list>
-    </app-ui-card>
-</app-ui-block>
-
-
-
-<div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-        <app-ui-card>
-            <app-ui-list [data]="[
-                {id:0, name:'Excercise'},
-                {id:1, name:'Meditate'},
-                {id:2, name:'Read'},
-                {id:3, name:'Drink Water'},
-                {id:4, name:'Rest'}
-            ]" icon="cog"></app-ui-list>
-        </app-ui-card>
-    </div>
-    <div class="col">
-        <app-ui-card>
-            <app-ui-list [data]="users" icon="cog"></app-ui-list>
-        </app-ui-card>
-    </div>
-</div>
-
-<app-ui-block title="Form Component">
-    <app-ui-form></app-ui-form>
-</app-ui-block>
-
 <div class="row mt-4">
-    <div class="col-sm-8">
+    <div class="col-lg-8">
         <app-ui-card>
             <h2 class="card-title">New Content</h2>
             <ckeditor [editor]="Editor" [data]="content" (change)="onChange($event)"></ckeditor>
@@ -60,7 +8,6 @@
 
                     <button type="button" class="btn btn-primary">Save</button>
                     <button type="button" class="btn btn-light">
-                       
                        Preview
                        <span class="fa fa-chevron-right"></span>
                     </button>
@@ -68,10 +15,33 @@
             </div>
         </app-ui-card>
     </div>
-    <div class="col-sm-4">
+    <div class="col-lg-4">
         <app-ui-card>
             <h2 class="card-title">Basic Info</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam quis fugit officiis repellat itaque sequi pariatur molestias dolore dolor ipsum magnam sit, quod quidem, cum odit tempora esse excepturi?</p>
+            <div class="stack gap-40 mlr-40">
+                <div class="stack-item">
+                    <h6>Date</h6>
+                    <app-ui-dropdown text="Select Category">
+                        <div class="mb-2">
+                            <app-ui-input-search></app-ui-input-search>
+                        </div>
+                        <app-ui-list [data]="users"></app-ui-list>
+                    </app-ui-dropdown>
+                </div>
+                <div class="stack-item">
+                    <h6>Date</h6>
+                    <app-ui-dropdown text="Select Date" icon="fa-calendar">
+                        <app-ui-list [data]="users"></app-ui-list>
+                    </app-ui-dropdown>
+                </div>
+                <div class="stack-item">
+                    <h6>Author</h6>
+                    <app-ui-dropdown text="Chris Low">
+                        <h1>Chris Low</h1>
+                    </app-ui-dropdown>
+                    <p>Add another Author</p>
+                </div>
+            </div>
         </app-ui-card>
         <app-ui-card>
             <h2 class="card-title text-dark">Additional</h2>

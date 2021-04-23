@@ -1,6 +1,6 @@
 <div class="dropdown">
-    <app-ui-button text="Select Item" (click)="toggleShow()" [icon_right]="getIcon()"></app-ui-button>
-    <ul class="dropdown-menu w-100" [ngClass]="getShow()">
+    <app-ui-button [text]="text" (click)="toggleShow()" [icon]="icon" [icon_right]="getIcon()"></app-ui-button>
+    <ul class="dropdown-menu w-100 p-2" [ngClass]="getShow()">
         <ng-content></ng-content>
     </ul>
 </div>

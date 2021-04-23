@@ -10,11 +10,12 @@ import { UiButtonComponent } from './ui-button/ui-button.component';
 import { UiHeadingComponent } from './ui-heading/ui-heading.component';
 import { UiCardComponent } from './ui-card/ui-card.component';
 import { UiDropdownComponent } from './ui-dropdown/ui-dropdown.component';
+import { UiInputSearchComponent } from './ui-input-search/ui-input-search.component';
 
 
 
 @NgModule({
-  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent],
+  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent],
   imports: [
     CommonModule,
     FormsModule
@@ -24,6 +25,7 @@ import { UiDropdownComponent } from './ui-dropdown/ui-dropdown.component';
     UiFormComponent,
     UiBlockComponent,
     UiInputComponent,
+    UiInputSearchComponent,
     UiListComponent,
     UiButtonComponent,
     UiHeadingComponent,

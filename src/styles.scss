@@ -11,11 +11,26 @@ $color-white: #fcfcfc;
 $color-dark-blue: #002357;
 $color-soft-blue: #e7eef6;
 $color-off-white: #f7f7f7;
+$color-gray-80: #515151;
 $color-gray: #666;
 $color-header-primary: #002357;
 //$nav-tabs-link-active-border-color:'inherit';
 body {
     background-color: $color-white;
+}
+
+//Typography
+input {
+    &:focus {
+        outline: none !important;
+        border: none !important;
+    }
+}
+
+textarea {
+    &:focus {
+        outline: none !important;
+    }
 }
 
 a:link,
@@ -79,6 +94,36 @@ a:hover {
     justify-content: space-between !important;
 }
 
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+}
+
+.gap-5 {
+    gap: 10px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.mlr-40 {
+    margin: 40px 20px;
+}
+
 //Dropdown
 .dropdown-menu {
     box-shadow: $shadow;
@@ -87,8 +132,10 @@ a:hover {
 // INPUT BUTTONS
 .input-group.button {
     .form-control {
-        border-left: none;
         border-right: none;
+    }
+    .form-control.with-icon {
+        border-left: none;
     }
     .input-group-prepend .input-group-text {
         border-right: none;

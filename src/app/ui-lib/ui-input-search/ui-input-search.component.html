@@ -1,10 +1,18 @@
 <style>
+    input,
+    input:focus,
+    .input-group-prepend .input-group-text {
+        background: #ebebeb;
+        border: none;
+    }
+    
     .input-group,
     input {
-        background-color: transparent;
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
         outline: none;
+        /* MAGIC NUMBER */
+        height: 45px;
     }
     
     .form-control {
@@ -15,11 +23,10 @@
         border-top-left-radius: 6px;
         border-bottom-left-radius: 6px;
         border-right: none;
-        background-color: rgba(0, 0, 0, 0);
     }
 </style>
 
-<div class="input-group mb-3">
+<div class="input-group">
     <div class="input-group-prepend">
         <span class="input-group-text">
             <i class="fa fa-search"></i>

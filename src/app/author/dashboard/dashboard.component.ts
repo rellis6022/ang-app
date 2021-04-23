@@ -12,7 +12,7 @@ import * as ContentEditor from '@uxui-guy/ckeditor5-custom-inline';
 })
 export class DashboardComponent implements OnInit {
   users = USERS
-  public Editor = ContentEditor
+  Editor = ContentEditor
   content = `
         <h4>Authoring</h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel perspiciatis tempore qui distinctio obcaecati. Quidem saepe similique officia tempore eaque dicta laudantium quia ipsum beatae dolore rerum, non dignissimos, suscipit reiciendis voluptatum? Incidunt maiores eaque nobis praesentium placeat esse voluptatibus, sapiente consequatur, cupiditate reiciendis ea tenetur ullam quos autem possimus!

@@ -13,13 +13,13 @@ export class UiButtonComponent implements OnInit {
 
   
   @Input() text = "Button"
-  @Input() icon:Icon = 'fa-cog'
-  @Input() icon_right:Icon = 'fa-angle-right'
+  @Input() icon:string = '';
+  @Input() icon_right:string = ''
 
   constructor() { }
 
-  getClasses(){
-    return ''
+  getClass(){
+    return this.icon ? 'pl-0 with-icon split':'split' 
   }
 
   ngOnInit(): void {

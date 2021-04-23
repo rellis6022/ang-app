@@ -1,10 +1,10 @@
-<div class="input-group button" [ngClass]="getClasses()">
-    <div class="input-group-prepend">
-        <span class="input-group-text">
+<div class="input-group button">
+    <div *ngIf="icon" class="input-group-prepend">
+        <span class="input-group-text" style="display:flex; justify-content:center; padding:8px">
             <i class="fa" [ngClass]="icon"></i>
         </span>
     </div>
-    <input type="button" [value]="text" class="form-control split">
+    <input type="button" [value]="text" class="form-control" [ngClass]="getClass()">
     <div class="input-group-append" style="min-width:30px;">
         <span class="input-group-text">
             <i class="fa" [ngClass]="icon_right"></i>

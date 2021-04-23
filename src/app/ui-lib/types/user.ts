@@ -16,3 +16,4 @@ export const USERS: User[] = [
   { id: 8, name: 'Maria Maxwell' },
   { id: 9, name: 'Tornado Bob' }
 ];
+
