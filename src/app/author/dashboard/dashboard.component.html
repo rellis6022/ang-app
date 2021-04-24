@@ -10,12 +10,11 @@
             <h2 class="card-title">New Content</h2>
             <ckeditor [editor]="Editor" [data]="content" (change)="onChange($event)"></ckeditor>
             <div class="d-flex flex-row-reverse">
-                <div>
-
-                    <button type="button" class="btn btn-primary">Save</button>
-                    <button type="button" class="btn btn-light">
-                       Preview
-                       <span class="fa fa-chevron-right"></span>
+                <div class="stack-row gap-5">
+                    <button type="button" class="btn btn btn-primary">Save</button>
+                    <button type="button" class="btn btn icon">
+                       <span>Preview</span>
+                       <i class="fa fa-angle-right"></i>
                     </button>
                 </div>
             </div>
