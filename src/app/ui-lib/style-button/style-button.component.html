@@ -2,30 +2,41 @@
     <div>
         <h4>Default</h4>
         <div class="stack-row">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn">Secondary</button>
-        </div>
-        <div class="stack-row mt-10">
-            <button type="button" class="btn btn-primary" disabled>Primary</button>
-            <button type="button" class="btn" disabled>Secondary</button>
+
+            <div class="stack">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn">Secondary</button>
+            </div>
+            <div class="stack">
+                <button type="button" class="btn btn-primary" disabled>Primary</button>
+                <button type="button" class="btn" disabled>Secondary</button>
+            </div>
         </div>
     </div>
 
 
     <div>
         <h4>Icons</h4>
-        <div class="stack-row">
-            <button type="button" class="btn icon">
+        <div class="stack">
+            <button type="button" class="btn icon split">
                 <span>Learn More</span>
                 <i class="fa fa-angle-right"></i>
             </button>
 
-            <button type="button" class="btn icon">
+            <button type="button" class="btn icon split">
                 <span>Settings</span>
                 <i class="fa fa-cog"></i>
             </button>
 
-            <button type="button" class="btn   icon">
+            <button type="button" class="btn icon split">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <span>Locations</span>
+                </div>
+                <i class="fa fa-chevron-right"></i>
+            </button>
+
+            <button type="button" class="btn icon">
                 <i class="fa fa-calendar"></i>
                 <span>Schedule</span>
                 <i class="fa fa-angle-down"></i>
