@@ -1,5 +1,11 @@
 <div class="row mt-4">
     <div class="col-lg-8">
+
+        <app-ui-card title="Buttons">
+            <h2 class="card-title">Buttons</h2>
+            <app-style-button></app-style-button>
+        </app-ui-card>
+
         <app-ui-card>
             <h2 class="card-title">New Content</h2>
             <ckeditor [editor]="Editor" [data]="content" (change)="onChange($event)"></ckeditor>
