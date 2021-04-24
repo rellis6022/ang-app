@@ -12,11 +12,12 @@ import { UiCardComponent } from './ui-card/ui-card.component';
 import { UiDropdownComponent } from './ui-dropdown/ui-dropdown.component';
 import { UiInputSearchComponent } from './ui-input-search/ui-input-search.component';
 import { StyleButtonComponent } from './style-button/style-button.component';
+import { StyleIconComponent } from './style-icon/style-icon.component';
 
 
 
 @NgModule({
-  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent],
+  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent],
   imports: [
     CommonModule,
     FormsModule
@@ -32,7 +33,8 @@ import { StyleButtonComponent } from './style-button/style-button.component';
     UiHeadingComponent,
     UiCardComponent,
     UiDropdownComponent,
-    StyleButtonComponent
+    StyleButtonComponent,
+    StyleIconComponent
   ]
 })
 export class UiLibModule { }

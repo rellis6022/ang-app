@@ -11,6 +11,9 @@ $btn-color-1: #f7f7f7;
 //disabled
 $btn-background-disabled: #e1e1e1;
 $btn-color-disabled: #b1b1b1;
+$btn-color-gray: #9e9e9e;
+$btn-color-gray-light: #f6f6f6;
+$btn-color-black: #444;
 .btn:not([class*="outline"]) {
     font-family: "Inter";
     border: none;
@@ -77,5 +80,20 @@ $btn-color-disabled: #b1b1b1;
     &.split {
         padding-left: 12px;
         padding-right: 12px;
+    }
+}
+
+.btn.outline {
+    color: $btn-color-black;
+    background-color: transparent !important;
+    border-color: $btn-color-gray;
+    &:hover {
+        color: $btn-color-black;
+        background-color: $btn-color-gray-light !important;
+        border-color: $btn-color-gray;
+    }
+    &:active {
+        color: $btn-color-black !important;
+        border-color: $btn-color-gray !important;
     }
 }

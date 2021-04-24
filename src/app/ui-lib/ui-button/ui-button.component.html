@@ -1,37 +1,7 @@
-<div class="input-group button">
-    <div *ngIf="icon" class="input-group-prepend">
-        <span class="input-group-text" style="display:flex; justify-content:center; padding:8px">
-            <i class="fa" [ngClass]="icon"></i>
-        </span>
+<div class="btn btn-primary btn split outline">
+    <div *ngIf="icon">
+        <i class="fa" [ngClass]="icon"></i>
     </div>
-    <input type="button" [value]="text" class="form-control" [ngClass]="getClass()">
-    <div class="input-group-append" style="min-width:30px;">
-        <span class="input-group-text">
-            <i class="fa" [ngClass]="icon_right"></i>
-        </span>
-    </div>
+    {{ text }}
+    <i class="fa" [ngClass]="icon_right"></i>
 </div>
-
-
-
-<!-- <div class="grid">
-    <button class="btn btn-primary">Button Primary</button>
-    <button class="btn btn-light">Button Light</button>
-    <button class="btn btn-outline-primary">Outline Primary</button>
-    <button class="btn btn-outline-light">Outline Light</button>
-    <button type="button" class="btn btn-light split">
-  Notifications <span class="badge bg-primary text-light">4</span>
-</button>
-    <button class="btn btn-light split">
-        Learn More
-        <span class="fa fa-angle-right"></span>
-    </button>
-    <button class="btn btn-light text-left">
-        <span class="fa fa-cog"></span>
-        Settings
-    </button>
-    <button class="btn btn-light text-left">
-        <span class="fa fa-calendar"></span>
-        Calendar
-    </button>
-</div> -->
