@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from "@angular/forms";
 import { NgSelectModule } from '@ng-select/ng-select';
-import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbTooltipModule, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 
 // UI_LIB components
 import { UiModalComponent } from './ui-modal/ui-modal.component';
@@ -19,15 +19,17 @@ import { StyleButtonComponent } from './style-button/style-button.component';
 import { StyleIconComponent } from './style-icon/style-icon.component';
 import { UiSelectComponent } from './ui-select/ui-select.component';
 import { UiTooltipComponent } from './ui-tooltip/ui-tooltip.component';
+import { UiDatepickerComponent } from './ui-datepicker/ui-datepicker.component';
 
 
 
 @NgModule({
-  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent, UiSelectComponent, UiTooltipComponent],
+  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent, UiSelectComponent, UiTooltipComponent, UiDatepickerComponent],
   imports: [
     CommonModule,
     NgSelectModule,
     NgbTooltipModule,
+    NgbDatepickerModule,
     FormsModule
   ],
   exports: [
@@ -46,7 +48,8 @@ import { UiTooltipComponent } from './ui-tooltip/ui-tooltip.component';
     UiSelectComponent,
     StyleButtonComponent,
     StyleIconComponent,
-    UiTooltipComponent
+    UiTooltipComponent,
+    UiDatepickerComponent
   ]
 })
 export class UiLibModule { }
