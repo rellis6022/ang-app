@@ -1,6 +1,10 @@
 <div class="row mt-4">
     <div class="col-lg-8">
         <app-ui-card>
+            <app-ui-tooltip></app-ui-tooltip>
+        </app-ui-card>
+
+        <app-ui-card>
             <h2 class="card-title">New Content</h2>
             <ckeditor [editor]="Editor" [data]="content" (change)="onChange($event)"></ckeditor>
             <div class="d-flex flex-row-reverse">

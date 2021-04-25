@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgSelectModule } from '@ng-select/ng-select';
 import { FormsModule } from "@angular/forms";
+import { NgSelectModule } from '@ng-select/ng-select';
+import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
+
+// UI_LIB components
 import { UiModalComponent } from './ui-modal/ui-modal.component';
 import { UiFormComponent } from './ui-form/ui-form.component';
 import { UiBlockComponent } from './ui-block/ui-block.component';
@@ -15,14 +18,16 @@ import { UiInputSearchComponent } from './ui-input-search/ui-input-search.compon
 import { StyleButtonComponent } from './style-button/style-button.component';
 import { StyleIconComponent } from './style-icon/style-icon.component';
 import { UiSelectComponent } from './ui-select/ui-select.component';
+import { UiTooltipComponent } from './ui-tooltip/ui-tooltip.component';
 
 
 
 @NgModule({
-  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent, UiSelectComponent],
+  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent, UiSelectComponent, UiTooltipComponent],
   imports: [
     CommonModule,
     NgSelectModule,
+    NgbTooltipModule,
     FormsModule
   ],
   exports: [
@@ -40,7 +45,8 @@ import { UiSelectComponent } from './ui-select/ui-select.component';
     UiDropdownComponent,
     UiSelectComponent,
     StyleButtonComponent,
-    StyleIconComponent
+    StyleIconComponent,
+    UiTooltipComponent
   ]
 })
 export class UiLibModule { }
