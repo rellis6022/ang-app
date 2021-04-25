@@ -1,5 +1,20 @@
-<ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
-<hr />
-
-<pre>Month: {{ date.month }}.{{ date.year }}</pre>
-<pre>Model: {{ model | json }}</pre>
+<div class="d-inline-block">
+    <ngb-datepicker class="custom-datepicker p-20" #dp [displayMonths]="1" outsideDays="visible" [showWeekdays]="true" navigation="none">
+        <ng-template ngbDatepickerContent>
+            <div *ngFor="let month of dp.state.months">
+                <div class="dp-header split">
+                    <h2 (click)="today()">
+                        {{ i18n.getMonthFullName(month.month) }} {{ month.year }}
+                    </h2>
+                    <div class="btn-group d-flex justify-content-end mb-2" role="group">
+                        <span (click)="navigate(-1)"><i class="ri-arrow-left-s-line"></i>
+            </span>
+                        <span (click)="navigate(1)"><i class="ri-arrow-right-s-line"></i
+            ></span>
+                    </div>
+                </div>
+                <ngb-datepicker-month class="border rounded" [month]="month"></ngb-datepicker-month>
+            </div>
+        </ng-template>
+    </ngb-datepicker>
+</div>

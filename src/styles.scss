@@ -251,3 +251,28 @@ a:hover {
         pointer-events: none;
     }
 }
+
+ngb-tooltip-window {
+    .tooltip-inner {
+        font-family: "Open Sans";
+        background-color: $color-dark-blue;
+        color: $color-off-white;
+        line-height: 1.3em;
+        padding: 11px 10px 13px 16px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+    }
+    &.bs-tooltip-top .arrow::before {
+        border-top-color: $color-dark-blue !important;
+    }
+    &.bs-tooltip-left .arrow::before {
+        border-left-color: $color-dark-blue !important;
+    }
+    &.bs-tooltip-right .arrow::before {
+        border-right-color: $color-dark-blue !important;
+    }
+    &.bs-tooltip-bottom .arrow::before {
+        border-bottom-color: $color-dark-blue !important;
+    }
+}
