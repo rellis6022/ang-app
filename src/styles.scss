@@ -1,7 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "~@ng-select/ng-select/themes/default.theme.css";
+.ng-select.custom {
+    font-family: "Open Sans";
+    border: 0px;
+    min-height: 0px;
+    border-radius: 6px;
+    .ng-option.ng-option-selected {
+        display: none;
+    }
+}
 
-/* Importing Bootstrap SCSS file. */
+.ng-select.custom .ng-select-container {
+    min-height: 0px;
+    border-radius: 6px;
+}
+
+.ng-select.custom .ng-arrow-wrapper .ng-arrow {
+    display: none;
+}
+
+.ng-select.custom span.ng-arrow-wrapper:before {
+    content: "\ea4e";
+    display: inline-block;
+    font-family: "remixicon";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ng-select.custom.ng-select-opened span.ng-arrow-wrapper:before {
+    content: "\ea78";
+    display: inline-block;
+    font-family: "remixicon";
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ng-select.custom.ng-select-single .ng-select-container {
+    height: auto;
+    font-size: 16px;
+    padding: 8px 12px;
+}
+
+.ng-select.custom .ng-select-container .ng-value-container {
+    align-items: center;
+    padding-left: 0px;
+}
 
 @import "~bootstrap/scss/bootstrap";
 @import "./buttons.scss";

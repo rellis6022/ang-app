@@ -1,0 +1,4 @@
+<ng-select class="custom" [(ngModel)]="selectedCar" [clearable]="false" [searchable]="false" [placeholder]="label" appendTo="body">
+    <ng-option *ngFor="let opt of data" [value]="opt.id">{{ opt.label }}
+    </ng-option>
+</ng-select>
