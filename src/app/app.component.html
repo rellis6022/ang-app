@@ -1,11 +1,12 @@
 <div class="nav-wrap">
-    <div class="container split">
-        <a routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{ exact: true }">home</a
-    >
-    <div class="stack-row gap-20">
-      <a routerLinkActive="active" routerLink="./author">Author</a>
-        <a routerLinkActive="active" routerLink="./publications">Publications</a>
+    <div class="split">
+        <a routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{ exact: true }">
+            <img src="assets/company-logo.svg" />
+        </a>
+        <div class="stack-row gap-20">
+            <a routerLinkActive="active" routerLink="./author">Author</a>
+            <a routerLinkActive="active" routerLink="./publications">Publications</a>
+        </div>
     </div>
-</div>
 </div>
 <router-outlet></router-outlet>

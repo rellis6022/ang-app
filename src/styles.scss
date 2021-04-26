@@ -9,7 +9,8 @@ $body-color: #111;
 $brand-primary: #1a3968;
 $button-primary: #00499e;
 $link-primary: #00499e;
-$color-white: #fcfcfc;
+$color-white: rgb(247, 247, 247);
+$color-pure-white: #fff;
 $color-dark-blue: #002357;
 $color-soft-blue: #e7eef6;
 $color-off-white: #f7f7f7;
@@ -213,18 +214,24 @@ ngb-tooltip-window {
 
 // Temp Nav
 .nav-wrap {
-    background: $color-dark-blue;
+    background: $color-pure-white;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 26px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
     a {
         margin: 0;
         padding: 0;
         list-style-type: none;
-        color: rgba($color-soft-blue, 0.75);
+        color: $color-dark-blue;
+        text-decoration: none;
         font-family: "Open Sans";
         font-size: 12px;
         text-transform: uppercase;
         letter-spacing: 1px;
         display: block;
+    }
+    img {
+        height: 26px;
+        width: auto;
     }
 }
