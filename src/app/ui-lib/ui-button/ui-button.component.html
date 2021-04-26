@@ -1,7 +1,10 @@
 <div class="btn btn-primary btn split outline">
-    <div *ngIf="icon">
-        <i class="fa" [ngClass]="icon"></i>
-    </div>
+    <span *ngIf="icon">
+    <i class="fa" [ngClass]="icon"></i>
     {{ text }}
+  </span>
+    <span *ngIf="!icon">
+    {{ text }}
+  </span>
     <i class="fa" [ngClass]="icon_right"></i>
 </div>

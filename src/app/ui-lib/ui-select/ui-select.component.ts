@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 interface iSelect {
   id:number,
@@ -8,11 +8,12 @@ interface iSelect {
 @Component({
   selector: 'app-ui-select',
   templateUrl: './ui-select.component.html',
-  styleUrls: ['./ui-select.component.scss']
+  encapsulation: ViewEncapsulation.None,
+  styleUrls:["./ui-select.component.scss"]
 })
 export class UiSelectComponent implements OnInit {
 
-  selectedCar?: number;
+  selectedCar!: number;
   @Input() label = 'Select'
 
   @Input() data:iSelect[] = [

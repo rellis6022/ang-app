@@ -1,14 +1,6 @@
 <div class="row mt-4">
     <div class="col-lg-8">
         <app-ui-card>
-            <app-ui-datepicker></app-ui-datepicker>
-        </app-ui-card>
-
-        <app-ui-card>
-            <app-ui-tooltip></app-ui-tooltip>
-        </app-ui-card>
-
-        <app-ui-card>
             <h2 class="card-title">New Content</h2>
             <ckeditor [editor]="Editor" [data]="content" (change)="onChange($event)"></ckeditor>
             <div class="d-flex flex-row-reverse">
@@ -22,7 +14,7 @@
             </div>
         </app-ui-card>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 stack gap-20">
         <app-ui-card>
             <h2 class="card-title">Basic Info</h2>
             <div class="stack gap-40 mlr-40">
@@ -32,8 +24,8 @@
                 </div>
                 <div class="stack-item">
                     <h6>Date</h6>
-                    <app-ui-dropdown text="Select Date" icon="fa-calendar">
-                        <app-ui-list [data]="users"></app-ui-list>
+                    <app-ui-dropdown text="Select Date" icon="ri-calendar-2-line">
+                        <app-ui-datepicker></app-ui-datepicker>
                     </app-ui-dropdown>
                 </div>
                 <div class="stack-item">
@@ -45,9 +37,16 @@
         </app-ui-card>
         <app-ui-card>
             <h2 class="card-title text-dark">Additional</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum totam quis fugit officiis repellat itaque sequi pariatur molestias dolore dolor ipsum magnam sit, quod quidem, cum odit tempora esse excepturi?
-            </p>
+            <div class="stack gap-15 mt-30 mb-30">
+                <button type="button" class="btn icon">
+          <i class="ri-add-line"></i>
+          <span>Add cover Image</span>
+        </button>
+                <button type="button" class="btn icon">
+          <i class="ri-add-line"></i>
+          <span>Add Linked Files</span>
+        </button>
+            </div>
         </app-ui-card>
     </div>
 </div>

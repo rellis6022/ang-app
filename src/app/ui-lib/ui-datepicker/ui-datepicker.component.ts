@@ -7,8 +7,9 @@ import {NgbDatepicker, NgbDatepickerI18n} from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './ui-datepicker.component.html',
   encapsulation: ViewEncapsulation.None,
   styles: [`
-    .custon-datepicker{
-      font-family: 'Open Sans'
+    .custom-datepicker{
+      border:none;
+      font-family: 'Open Sans';;
     }
     .custom-datepicker .ngb-dp-header {
       padding: 0;

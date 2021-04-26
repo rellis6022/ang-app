@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UiTooltipComponent implements OnInit {
   
-  tiptext="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel perspiciatis tempore qui distinctio obcaecati."
+  tiptext="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
 
   constructor() { }
 

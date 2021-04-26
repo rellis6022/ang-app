@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from "@angular/forms";
 import { NgSelectModule } from '@ng-select/ng-select';
-import { NgbTooltipModule, NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbTooltipModule, NgbDatepickerModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 // UI_LIB components
 import { UiModalComponent } from './ui-modal/ui-modal.component';
@@ -20,15 +20,17 @@ import { StyleIconComponent } from './style-icon/style-icon.component';
 import { UiSelectComponent } from './ui-select/ui-select.component';
 import { UiTooltipComponent } from './ui-tooltip/ui-tooltip.component';
 import { UiDatepickerComponent } from './ui-datepicker/ui-datepicker.component';
+import { StyleDropdownComponent } from './style-dropdown/style-dropdown.component';
 
 
 
 @NgModule({
-  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent, UiSelectComponent, UiTooltipComponent, UiDatepickerComponent],
+  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent, UiSelectComponent, UiTooltipComponent, UiDatepickerComponent, StyleDropdownComponent],
   imports: [
     CommonModule,
     NgSelectModule,
     NgbTooltipModule,
+    NgbDropdownModule,
     NgbDatepickerModule,
     FormsModule
   ],
@@ -46,10 +48,11 @@ import { UiDatepickerComponent } from './ui-datepicker/ui-datepicker.component';
     UiCardComponent,
     UiDropdownComponent,
     UiSelectComponent,
+    UiTooltipComponent,
+    UiDatepickerComponent,
     StyleButtonComponent,
     StyleIconComponent,
-    UiTooltipComponent,
-    UiDatepickerComponent
+    StyleDropdownComponent
   ]
 })
 export class UiLibModule { }

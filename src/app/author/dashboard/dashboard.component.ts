@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { USERS, AUTHORS } from "../../ui-lib/types/user";
+import { USERS, AUTHORS, Author, User } from "../../ui-lib/types/user";
 import * as ContentEditor from '@uxui-guy/ckeditor5-custom-inline';
 
 
@@ -11,8 +11,8 @@ import * as ContentEditor from '@uxui-guy/ckeditor5-custom-inline';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-  users = USERS;
-  authors = AUTHORS;
+  users:User[] = USERS;
+  authors:Author[] = AUTHORS;
   Editor = ContentEditor
   content = `
         <h4>Authoring</h4>
