@@ -20,6 +20,7 @@ import { TruncatePipe } from './pipes/truncate.pipe';
 import { TitlecasePipe } from './pipes/titlecase.pipe';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

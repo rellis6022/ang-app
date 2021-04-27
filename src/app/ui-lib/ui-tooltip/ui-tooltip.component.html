@@ -1,0 +1,14 @@
+<div class="grid-2 pad">
+    <button type="button" class="btn" [ngbTooltip]="tiptext" placement="left" [autoClose]="true" triggers="manual" #tl="ngbTooltip" (click)="tl.open()">
+    left
+  </button>
+    <button type="button" class="btn" [ngbTooltip]="tiptext" [autoClose]="true" triggers="manual" #tp="ngbTooltip" (click)="tp.open()">
+    Top
+  </button>
+    <button type="button" class="btn" placement="bottom" [ngbTooltip]="tiptext" [autoClose]="true" triggers="manual" #tb="ngbTooltip" (click)="tb.open()">
+    Bottom
+  </button>
+    <button type="button" class="btn" placement="right" [ngbTooltip]="tiptext" [autoClose]="true" triggers="manual" #tr="ngbTooltip" (click)="tr.open()">
+    Right
+  </button>
+</div>

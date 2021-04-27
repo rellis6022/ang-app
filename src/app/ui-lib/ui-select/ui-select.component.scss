@@ -1,0 +1,69 @@
+@import "~@ng-select/ng-select/themes/default.theme.css";
+$radius: 6px;
+$font: "Open Sans";
+.ng-dropdown-panel.custom .ng-dropdown-panel-items .ng-option:last-child {
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+.ng-dropdown-panel.custom .ng-dropdown-panel-items {
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+.ng-dropdown-panel.custom {
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+.ng-dropdown-panel .ng-option-label {
+    font-family: $font;
+}
+
+.ng-select.custom {
+    font-family: $font;
+    border: 0px;
+    min-height: 0px;
+    border-radius: $radius;
+    .ng-option.ng-option-selected {
+        display: none;
+    }
+}
+
+.ng-select.custom .ng-select-container {
+    min-height: 0px;
+    border-radius: 6px;
+}
+
+.ng-select.custom .ng-arrow-wrapper .ng-arrow {
+    display: none;
+}
+
+.ng-select.custom span.ng-arrow-wrapper:before {
+    content: "\ea4e";
+    display: inline-block;
+    font-family: "remixicon";
+    font-size: 16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ng-select.custom.ng-select-opened span.ng-arrow-wrapper:before {
+    content: "\ea78";
+    display: inline-block;
+    font-family: "remixicon";
+    font-size: 16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.ng-select.custom.ng-select-single .ng-select-container {
+    height: auto;
+    font-size: 16px;
+    padding: 8px 0px 8px 12px;
+}
+
+.ng-select.custom .ng-select-container .ng-value-container {
+    align-items: center;
+    padding-left: 0px;
+}

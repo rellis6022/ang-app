@@ -1,3 +1,63 @@
+<style>
+     :host {
+        font-family: Inter;
+    }
+    
+    h4 {
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: #9e0035;
+        margin: 0;
+        text-transform: uppercase;
+        margin-bottom: 0.25em;
+        line-height: 1em;
+    }
+    
+    h4+p {
+        font-size: 12px;
+        margin: 0;
+        line-height: 1.5em;
+    }
+</style>
+<div class="mt-4">
+    <div class="row">
+        <div class="col-lg-2">
+            <h4 class="card-title">Datepicker / tooltips</h4>
+            <p>Select menu variants.</p>
+        </div>
+        <div class="col-lg-10">
+            <app-ui-card>
+                <div class="row">
+                    <div class="col">
+                        <div class="flex-center">
+                            <div class="border-box">
+                                <app-ui-datepicker></app-ui-datepicker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="flex-center">
+                            <app-ui-tooltip></app-ui-tooltip>
+                        </div>
+                    </div>
+                </div>
+            </app-ui-card>
+        </div>
+    </div>
+</div>
+<div class="mt-4">
+    <div class="row">
+        <div class="col-lg-2">
+            <h4 class="card-title">Selection</h4>
+            <p>Select menu variants.</p>
+        </div>
+        <div class="col-lg-10">
+            <app-ui-card>
+                <app-ui-select></app-ui-select>
+            </app-ui-card>
+        </div>
+    </div>
+</div>
 <div class="mt-4">
     <div class="row">
         <div class="col-lg-2">

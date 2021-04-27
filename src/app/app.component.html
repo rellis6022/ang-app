@@ -1,18 +1,21 @@
 <div class="nav-wrap">
-    <ul class="nav nav-pills nav-justified">
-        <li class="nav-item">
-            <a class="nav-item nav-link" routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{exact:true}">home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item nav-link" routerLinkActive="active" routerLink="./publications">Publications</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-item nav-link" routerLinkActive="active" routerLink="./author">Author</a>
-        </li>
-    </ul>
+    <div class="split w-100">
+        <a routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{ exact: true }">
+            <img src="assets/company-logo.svg" />
+        </a>
+        <div class="stack-row gap-20">
+            <a routerLinkActive="active" routerLink="./author">Author</a>
+            <a routerLinkActive="active" routerLink="./publications">Publications</a>
+        </div>
+    </div>
 </div>
-
-
-
-
-<router-outlet></router-outlet>
+<div class="layout-container">
+    <div class="layout">
+        <div class="sidebar"></div>
+        <div class="main">
+            <div class="container-fluid no-gutters">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>

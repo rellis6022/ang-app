@@ -1,9 +1,16 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-ui-dropdown',
   templateUrl: './ui-dropdown.component.html',
-  styleUrls: ['./ui-dropdown.component.css']
+  encapsulation: ViewEncapsulation.None,
+  styles: [`
+    .dropdown-toggle::after,
+    .dropup .dropdown-toggle::after{
+      display:none;
+    }
+    
+  `]
 })
 export class UiDropdownComponent implements OnInit {
   
