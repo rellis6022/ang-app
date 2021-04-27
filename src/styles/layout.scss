@@ -1,14 +1,20 @@
 $logo-size: 27px;
 $nav-height: 75px;
 $sidebar-width: $nav-height;
+div.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 div.layout {
     display: flex;
+    flex: 1;
     .sidebar {
         background: $primary-color-dark;
-        width: $sidebar-width;
+        min-width: $sidebar-width;
     }
     .main {
-        flex: 1;
         padding: 34px;
         max-width: 1300px;
         margin: 0 auto;

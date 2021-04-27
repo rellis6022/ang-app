@@ -21,11 +21,12 @@ import { UiSelectComponent } from './ui-select/ui-select.component';
 import { UiTooltipComponent } from './ui-tooltip/ui-tooltip.component';
 import { UiDatepickerComponent } from './ui-datepicker/ui-datepicker.component';
 import { StyleDropdownComponent } from './style-dropdown/style-dropdown.component';
+import { UiSectionTextareaComponent } from './ui-section-textarea/ui-section-textarea.component';
 
 
 
 @NgModule({
-  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent, UiSelectComponent, UiTooltipComponent, UiDatepickerComponent, StyleDropdownComponent],
+  declarations: [UiModalComponent, UiFormComponent, UiBlockComponent, UiInputComponent, UiListComponent, UiButtonComponent, UiHeadingComponent, UiCardComponent, UiDropdownComponent, UiInputSearchComponent, StyleButtonComponent, StyleIconComponent, UiSelectComponent, UiTooltipComponent, UiDatepickerComponent, StyleDropdownComponent, UiSectionTextareaComponent],
   imports: [
     CommonModule,
     NgSelectModule,
@@ -52,7 +53,8 @@ import { StyleDropdownComponent } from './style-dropdown/style-dropdown.componen
     UiDatepickerComponent,
     StyleButtonComponent,
     StyleIconComponent,
-    StyleDropdownComponent
+    StyleDropdownComponent,
+    UiSectionTextareaComponent
   ]
 })
 export class UiLibModule { }

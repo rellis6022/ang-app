@@ -1,38 +1,98 @@
+@import "./variables.scss";
+@mixin text-common {
+    font-style: normal;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin text-sm {
+    @include text-common();
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@mixin text-hdr {
+    @include text-common();
+    color: $primary-color-dark;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+@mixin text-body {
+    @include text-common();
+    color: $gray-100;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+@mixin text-desc {
+    @include text-common();
+    color: $gray-80;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+p {
+    @include text-body();
+}
+
+.mb0 {
+    margin-bottom: 5px !important;
+}
+
+.text-sm {
+    @include text-sm();
+}
+
+.text-desc {
+    @include text-desc();
+}
+
 .card p {
     font-size: 14px;
+    line-height: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
 }
 
 .card h4 {
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: left;
-    color: $primary-color-dark;
-    line-height: 1em;
+    @include text-hdr();
     margin-bottom: 20px;
     span {
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        text-align: left;
+        font-weight: 400;
         color: $gray-50;
     }
 }
 
 .add-link {
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
+    align-items: center;
     display: flex;
     text-decoration: none !important;
+    span {
+        border: 1px solid;
+        margin-right: 10px;
+        display: flex;
+        width: 35px;
+        height: 35px;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &.button {
+        color: $gray-60;
+        &:not(span) {
+            font-style: italic;
+        }
+    }
 }
