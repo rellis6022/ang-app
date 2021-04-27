@@ -1,13 +1,15 @@
 <style>
+    /* Gutter Spacing */
+    
     .row>[class*="col-"]:first-child {
         padding-right: 0px;
     }
     
     .row>[class*="col-"]:last-child {
-        padding-left: 18px;
+        padding-left: 25px;
     }
 </style>
-<div class="row mt-4 g-2">
+<div class="row">
     <div class="col-md-8">
         <app-ui-card>
             <h4>New Content</h4>
@@ -35,10 +37,12 @@
         <app-ui-card>
             <h4>Basic Info</h4>
             <div class="pb-20">
-                <div class="stack gap-40">
+                <div class="stack gap-50 mb-50">
                     <div>
                         <label>Category</label>
                         <app-ui-select label="Select Category"></app-ui-select>
+                        <a href="#" class="add-link mt-20">
+                            <i class="ri-add-line"></i> Add another category</a>
                     </div>
                     <div>
                         <label>Date</label>
@@ -49,7 +53,9 @@
                     <div>
                         <label>Author</label>
                         <app-ui-select [data]="authors" label="Select Author"></app-ui-select>
-                        <p>Add another Author</p>
+                        <a href="#" class="add-link mt-20">
+                            <i class="ri-add-line"></i> Add another auther
+                        </a>
                     </div>
                 </div>
             </div>

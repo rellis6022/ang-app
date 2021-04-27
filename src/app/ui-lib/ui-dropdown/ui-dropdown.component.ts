@@ -9,6 +9,7 @@ import { Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } fro
     .dropup .dropdown-toggle::after{
       display:none;
     }
+    
   `]
 })
 export class UiDropdownComponent implements OnInit {

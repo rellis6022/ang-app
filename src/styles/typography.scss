@@ -12,7 +12,9 @@
     font-size: 20px;
     font-weight: 600;
     text-align: left;
-    color: green;
+    color: $primary-color-dark;
+    line-height: 1em;
+    margin-bottom: 20px;
     span {
         font-family: Inter;
         font-size: 18px;
@@ -21,4 +23,16 @@
         text-align: left;
         color: $gray-50;
     }
+}
+
+.add-link {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    display: flex;
+    text-decoration: none !important;
 }

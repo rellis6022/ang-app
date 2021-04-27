@@ -1,5 +1,5 @@
 <div class="nav-wrap">
-    <div class="split">
+    <div class="split w-100">
         <a routerLinkActive="active" routerLink="./" [routerLinkActiveOptions]="{ exact: true }">
             <img src="assets/company-logo.svg" />
         </a>
@@ -12,6 +12,8 @@
 <div class="layout">
     <div class="sidebar"></div>
     <div class="main">
-        <router-outlet></router-outlet>
+        <div class="container-fluid no-gutters">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </div>
