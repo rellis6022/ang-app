@@ -1,8 +1,25 @@
-<div class="row mt-4">
-    <div class="col-lg-8">
+<style>
+    .row>[class*="col-"]:first-child {
+        padding-right: 0px;
+    }
+    
+    .row>[class*="col-"]:last-child {
+        padding-left: 18px;
+    }
+</style>
+<div class="row mt-4 g-2">
+    <div class="col-md-8">
         <app-ui-card>
-            <h2 class="card-title">New Content</h2>
-            <ckeditor [editor]="Editor" [data]="content" (change)="onChange($event)"></ckeditor>
+            <h4>New Content</h4>
+            <div class="mb-3 w-75">
+                <label class="form-label">Title</label>
+                <input type="text" value="Your content title" class="form-control" />
+                <div class="form-text">Suggested maximum length is 80 characters.</div>
+            </div>
+            <p class="label mt-40">Main Content</p>
+            <div class="border-box p-20 mb-20 mh-600">
+                <ckeditor [editor]="Editor" [data]="content" (change)="onChange($event)"></ckeditor>
+            </div>
             <div class="d-flex flex-row-reverse">
                 <div class="stack-row gap-5">
                     <button type="button" class="btn btn btn-primary">Save</button>
@@ -14,29 +31,31 @@
             </div>
         </app-ui-card>
     </div>
-    <div class="col-lg-4 stack gap-20">
+    <div class="col-md-4">
         <app-ui-card>
-            <h2 class="card-title">Basic Info</h2>
-            <div class="stack gap-40 mlr-40">
-                <div class="stack-item">
-                    <h6>Category</h6>
-                    <app-ui-select label="Select Category"></app-ui-select>
-                </div>
-                <div class="stack-item">
-                    <h6>Date</h6>
-                    <app-ui-dropdown text="Select Date" icon="ri-calendar-2-line">
-                        <app-ui-datepicker></app-ui-datepicker>
-                    </app-ui-dropdown>
-                </div>
-                <div class="stack-item">
-                    <h6>Author</h6>
-                    <app-ui-select [data]="authors" label="Select Author"></app-ui-select>
-                    <p>Add another Author</p>
+            <h4>Basic Info</h4>
+            <div class="pb-20">
+                <div class="stack gap-40">
+                    <div>
+                        <label>Category</label>
+                        <app-ui-select label="Select Category"></app-ui-select>
+                    </div>
+                    <div>
+                        <label>Date</label>
+                        <app-ui-dropdown text="Select Date" icon="ri-calendar-2-line">
+                            <app-ui-datepicker></app-ui-datepicker>
+                        </app-ui-dropdown>
+                    </div>
+                    <div>
+                        <label>Author</label>
+                        <app-ui-select [data]="authors" label="Select Author"></app-ui-select>
+                        <p>Add another Author</p>
+                    </div>
                 </div>
             </div>
         </app-ui-card>
         <app-ui-card>
-            <h2 class="card-title text-dark">Additional</h2>
+            <h4>Additional</h4>
             <div class="stack gap-15 mt-30 mb-30">
                 <button type="button" class="btn icon">
           <i class="ri-add-line"></i>
@@ -51,12 +70,83 @@
     </div>
 </div>
 
-<div class="row mt-4">
-    <div class="col-sm-12">
-        <div class="card w-100">
-            <div class="card-body">
-                <h2 class="card-title">Summary</h2>
+<app-ui-card>
+    <!-- Summary -->
+    <div class="row plr-20 mb-40">
+        <div class="col-sm-12">
+            <h4>Summary <span>(Optional)</span></h4>
+            <p>
+                This summary will appear in search results and at the top of longer articles. Suggested maximum length is 220 characters. If left empy, the first 100 words of the artile will be displayed.
+            </p>
+            <div class="border-box p-20">
+                <p>
+                    Scelerisque viverra mauris in aliquam sem. Ultrices dui sapien eget mi proin sed libero enim. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Aenean et tortor at risus viverra. Rhoncus dolor purus non enim praesent elementum. Aliquet
+                    lectus proin nibh nisl condimentum id venenatis a condimentum. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Cras tincidunt lobortis feugiat vivamus at augue eget.
+                </p>
             </div>
         </div>
     </div>
-</div>
+    <!-- At a glance / Section Links -->
+    <div class="row row mb-40 plr-20">
+        <div class="col-md-6">
+            <h4>At a glance</h4>
+            <p>
+                Add a list of bullleted conent highlights. Press enter to add bullet points.
+            </p>
+            <div class="border-box p-20 mb-20"></div>
+        </div>
+        <div class="col-md-6">
+            <h4>Section Links / Table of Contents <span>(Optional)</span></h4>
+            <p>
+                These section links were found in the content. Add section links by selecting text and adding # as the link address.
+            </p>
+            <div class="border-box p-20 mb-20">
+                <ol>
+                    <li>FOMC press conference recaps Fed policy stance</li>
+                    <li>Outlook remains cautiously optimistic</li>
+                    <li>Unemployment numbers may have a chilling effect</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!-- Tags / Related Content -->
+    <div class="row mb-40 plr-20">
+        <div class="col-md-6">
+            <h4>Tags</h4>
+            <p>
+                Add a list of keywords that will allow users to discover this and related content. Type and press enter to add a tag. Drag and drop to reorder the tags.
+            </p>
+            <div class="border-box p-20 mh-200">
+                <span>Economics</span>
+                <span>Finances</span>
+                <span>Acquisitions</span>
+                <span>Business</span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4>Related Content (Optional)</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic sapiente aut fuga eaque eum, in voluptas deserunt alias natus.
+            </p>
+            <div class="border-box p-20 mh-100">
+                <div>
+                    <app-ui-input-search></app-ui-input-search>
+                </div>
+                <ol>
+                    <li>FOMC press conference recaps Fed policy stance</li>
+                    <li>Outlook remains cautiously optimistic</li>
+                    <li>Unemployment numbers may have a chilling effect</li>
+                </ol>
+            </div>
+            <div class="d-flex flex-row-reverse mt-20">
+                <div class="stack-row gap-5">
+                    <button type="button" class="btn btn btn-primary">Save</button>
+                    <button type="button" class="btn btn icon">
+            <span>Preview</span>
+            <i class="fa fa-angle-right"></i>
+          </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-ui-card>

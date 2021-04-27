@@ -15,8 +15,12 @@ export class DashboardComponent implements OnInit {
   authors:Author[] = AUTHORS;
   Editor = ContentEditor
   content = `
-        <h4>Authoring</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel perspiciatis tempore qui distinctio obcaecati. Quidem saepe similique officia tempore eaque dicta laudantium quia ipsum beatae dolore rerum, non dignissimos, suscipit reiciendis voluptatum? Incidunt maiores eaque nobis praesentium placeat esse voluptatibus, sapiente consequatur, cupiditate reiciendis ea tenetur ullam quos autem possimus!
+        <p><strong/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio facilisis mauris sit amet massa vitae tortor condimentum. Sapien eget mi proin sed libero enim sed. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque</strong></p>
+
+        <p><strong>1. FOMC press conference recaps Fed policy stance</strong></p>
+
+        <p>Scelerisque viverra mauris in aliquam sem. Ultrices dui sapien eget mi proin sed libero enim. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Aenean et tortor at risus viverra. Rhoncus dolor purus non enim praesent elementum. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Cras tincidunt lobortis feugiat vivamus at augue eget. Odio eu feugiat pretium nibh ipsum consequat nisl vel pretium. Sit amet tellus cras adipiscing.</p>
+        <p>Vitae congue mauris rhoncus aenean vel. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Eget est lorem ipsum dolor sit amet consectetur. Diam sit amet nisl suscipit adipiscing bibendum est. Porta non pulvinar neque laoreet suspendisse interdum. Ullamcorper.
         </p>`
 
   onChange(ev:any){

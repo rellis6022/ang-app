@@ -1,0 +1,78 @@
+$col-steps: 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16;
+$mw-steps: 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 200 250 300 350 400 450 500 550 600 650 700 750 800 850 900 950 1000;
+$pad-steps: 0 5 10 15 20 30 40 50 60 70 80 90 100;
+.stack {
+    display: grid;
+    grid-template-columns: 1fr;
+    &-row {
+        display: flex;
+        gap: 0.5em;
+        align-items: flex-start;
+    }
+}
+
+// @each override utility classes
+@each $cols in $col-steps {
+    .grid-#{$cols} {
+        display: grid;
+        grid-template-columns: repeat(#{$cols}, 1fr);
+        gap: 1rem;
+        &.pad {
+            padding: 1rem;
+        }
+    }
+}
+
+@each $size in $mw-steps {
+    .mw-#{$size} {
+        min-width: #{$size}px !important;
+    }
+    .mh-#{$size} {
+        min-height: #{$size}px !important;
+    }
+}
+
+@each $size in $pad-steps {
+    .p-#{$size} {
+        padding: #{$size}px;
+    }
+    .plr-#{$size} {
+        padding-left: #{$size}px;
+        padding-right: #{$size}px;
+    }
+    .ptb-#{$size} {
+        padding-top: #{$size}px;
+        padding-bottom: #{$size}px;
+    }
+    .m-#{$size} {
+        margin: #{$size}px;
+    }
+    .mlr-#{$size} {
+        margin-left: #{$size}px;
+        margin-right: #{$size}px;
+    }
+    .mtb-#{$size} {
+        padding-top: #{$size}px;
+        padding-bottom: #{$size}px;
+    }
+    .mt-#{$size} {
+        margin-top: #{$size}px;
+    }
+    .mb-#{$size} {
+        margin-bottom: #{$size}px !important;
+    }
+    .mrb-#{$size} {
+        margin-bottom: #{$size}px !important;
+    }
+    .gap-#{$size} {
+        gap: #{$size}px;
+    }
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
